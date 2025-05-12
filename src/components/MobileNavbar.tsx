@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Book, User, Calendar, Bell, Info, Contact, Download } from "lucide-react";
+import { Menu, X, Book, User, Calendar, Bell, Info, Contact, Download,Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -18,6 +18,7 @@ const MobileNavbar = () => {
     { icon: <Calendar className="h-5 w-5" />, label: "Events", path: "/events" },
     { icon: <Download className="h-5 w-5" />, label: "Timetable", path: "/timetable" },
     { icon: <Contact className="h-5 w-5" />, label: "Contact", path: "/contact" },
+    { icon: <Users className="h-5 w-5" />, label: "Team", path: "/team" },
   ];
 
   return (
